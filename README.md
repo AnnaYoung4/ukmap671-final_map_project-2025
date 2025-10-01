@@ -73,6 +73,6 @@ Key points from the map and mapmaking process:
 
 ## Final Project Link
 
-Please view the [final map online](www.github.com/your-username/ukmap671_final_map_project-2025/index.html)
+Please view the [final map online](ukmap671-final_map_project-2025\Final_Map\index.html)
 
 
