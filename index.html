@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset=utf-8 />
-	<title>Web Page Template</title>
+	<title>Middle Ohio–Laughery Watershed Map</title>
 	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
@@ -62,25 +62,27 @@
 <body>
 	<section>
 
-		<h1>Map header</h1>
-		<!-- Uncomment the iframe tag (inline web page frame) to show your slippy map, if you choose to make a slippy map -->
-		<!-- <iframe src="tiles.html" width="100%" height="640px"></iframe> -->
+		    <h1>Middle Ohio–Laughery Watershed Map</h1>
 
-		<h2>Description</h2>
+    <!-- Embed interactive Mapbox map -->
+    <iframe src="map.html" width="100%" height="640px"></iframe>
 
-		<p></p>
+    <h2>Description</h2>
+    <p>
+      This interactive map shows the hydrology of the Middle Ohio–Laughery Watershed (HU8 05090203), including major rivers, streams, and waterbodies. Labels for flowlines and waterbodies appear when zoomed in. State and county layers provide geographic context, along with a satellite basemap to enhances spatial understanding.
+    </p>
 
-		<h3>Map details</h3>
-		<p>Create on QGIS version # using OpenStreetMap data harvested from the QuickOSM plugin. &copy; 2022 Openstreet map contributors.</p>
+    <h3>Map Details</h3>
+    <p>
+      Created in Mapbox Studio, with hydrology data from the <a href="https://www.usgs.gov/national-hydrography">USGS National Hydrography Dataset (NHD)</a>. Data added to QGIS 3.44.2 where it was simplified and exported as GeoJSON before uploading to Mapbox Studio for interactive web mapping. © USGS
+    </p>
 
-		<ul>
-			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
-			<li>See my projects on GitHub:
-				<a href="">username</a>
-			</li>
-		</ul>
-	</section>
-
+    <ul>
+      <li>See my projects on GitHub: 
+        <a href="https://github.com/annayoung4">annayoung4</a>
+      </li>
+    </ul>
+  </section>
 
 </body>
 

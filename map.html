@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Middle Ohio–Laughery Watershed Map</title> <!--Change this!! -->
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+
+<div id='map'></div>
+
+  <script>
+    // Change this to your Access token ----------------------
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYXlvdW5nNCIsImEiOiJjbWZ5N2MxaGswZ3hiMmxwdmEzbDdhaTVhIn0.7iuzdMYatLeY9ZkZqrAd_w';
+    // ------------------------------------------------
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+
+      // Change this to your style --------------------
+      style: 'mapbox://styles/annayoung4/cmg15geaa001h01qqgsmi39hr',
+      // ----------------------------------------------
+
+      // Change to your location ----------------------
+      zoom: 8.50,
+      center: [-84.850847, 39.037501]
+      // ----------------------------------------------
+
+    });
+
+    // Add geolocate control to the map.
+     map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
+  </script>
+
+</body>
+
+</html>
