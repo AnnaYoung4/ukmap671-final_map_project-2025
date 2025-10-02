@@ -71,6 +71,6 @@ Key points from the map and mapmaking process:
 
 ## Final Project Link
 
-Please view the [final map online](Final_Map\index.html)
+Please view the [final map online](https://annayoung4.github.io/ukmap671-final_map_project-2025/)
 
 
