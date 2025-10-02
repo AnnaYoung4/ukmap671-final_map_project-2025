@@ -18,9 +18,9 @@ This project visualizes the **hydrology of the Middle Ohio–Laughery Watershed*
 
 ### Data Source
 
-[USGS National Hydrography Dataset (NHD) – Best Resolution](https://www.usgs.gov/national-hydrography) 
+[USGS National Hydrography Dataset (NHD) – Best Resolution](https://apps.nationalmap.gov/downloader/) 
 
-* **Initial Data projection:** NHD default (typically NAD83 / UTM zones)  
+* **Initial Data projection:** EPSG:4269 – NAD83 (Geographic Coordinate System) 
 * **Intended Final Map projection:** WGS84 (EPSG:4326) for web mapping in Mapbox  
 
 ---
@@ -42,8 +42,6 @@ The purpose of this map is to provide a **clear, interactive visualization of wa
 Example of in-process map:  
 ![in process image](images/QGIS_Workflow.jpg)
 
-You can describe the mapmaking process in this section, including images where it helps to describe the process.
-
 Steps in the process:
 
 1. **Collecting and preparing data** – Downloaded NHD shapefiles for HU8 05090203 from USGS, including flowlines and waterbodies.  
@@ -53,7 +51,7 @@ Steps in the process:
 5. **Styling features** – 
    - Flowlines rendered as blue lines; waterbodies as filled polygons.  
    - **Labels added** to major waterbodies and flowlines; labels configured to appear **only at closer zoom levels** to avoid clutter.  
-6. **Adding contextual layers** – Included state and county boundary layers to provide geographic reference, along with a satellite basemap for context.  
+6. **Adding contextual layers** – Included state and county boundary layers from Mapbox streets v8, to provide geographic reference, along with a Mapbox Satellite as a basemap for context.  
 7. **Layer ordering and adjustments** – Ensured water features appear above the basemap but below labels, and verified visibility at different zoom levels.  
 8. **Final adjustments and testing** – Reviewed map for clarity, readability, and visual balance.
 ---
