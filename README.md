@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project visualizes the **hydrology of the Middle Ohio–Laughery Watershed** (Hydrologic Unit 8 – 05090203) using the USGS National Hydrography Dataset (NHD). The map displays **flowlines** (streams and rivers) and **waterbodies** (lakes, ponds, reservoirs) in the watershed, providing a tool for interactive exploration, environmental studies, and watershed management analysis.
+This project visualizes the **hydrology of the Middle Ohio–Laughery Watershed** (Hydrologic Unit 8 – 05090203) using the USGS National Hydrography Dataset (NHD). The map displays **flowlines** (streams and rivers) and **waterbodies** (lakes, ponds, reservoirs) in the watershed, providing a tool for interactive exploration, environmental studies, and watershed management analysis. Additionally, land use features such as wetlands and national parks are also present to give context for environmental planning and conservation efforts.
 
 
 ## Project Contents
@@ -23,6 +23,7 @@ Hydrological Unit (HU) 8 - 05090203 (published 20231216) Shapefile
 
 * **Initial Data projection:** EPSG:4269 – NAD83 (Geographic Coordinate System) 
 * **Intended Final Map projection:** WGS84 (EPSG:4326) for web mapping in Mapbox  
+Additional contextual layers: Mapbox Streets v8 (wetlands, national parks, waterways, state and county boundaries)
 
 ---
 
@@ -52,7 +53,7 @@ Steps in the process:
 5. **Styling features** – 
    - Flowlines rendered as blue lines; waterbodies as filled polygons.  
    - **Labels added** to major waterbodies and flowlines; labels configured to appear **only at closer zoom levels** to avoid clutter.  
-6. **Adding contextual layers** – Included state and county boundary layers from Mapbox streets v8, to provide geographic reference, along with a Mapbox Satellite as a basemap for context.  
+6. **Adding contextual layers** – Included state and county boundaries, wetlands, national parks and waterways from Mapbox Streets v8, along with a Mapbox Satellite as a basemap for context.  
 7. **Layer ordering and adjustments** – Ensured water features appear above the basemap but below labels, and verified visibility at different zoom levels.  
 8. **Final adjustments and testing** – Reviewed map for clarity, readability, and visual balance.
 ---
@@ -62,6 +63,7 @@ Steps in the process:
 Key points from the map and mapmaking process:
 
 - Major rivers, streams, and waterbodies in the Middle Ohio–Laughery Watershed are clearly visualized.  
+- Included state and county boundaries, wetlands, national parks and waterways from Mapbox Streets v8
 - Labels for flowlines and waterbodies appear only when zoomed in close enough to avoid clutter.  
 - State and county layers provide context and help locate features within the watershed.  
 - Satellite basemap enhances geographic understanding of the area.  
