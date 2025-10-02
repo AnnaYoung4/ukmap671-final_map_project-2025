@@ -19,6 +19,7 @@ This project visualizes the **hydrology of the Middle Ohio–Laughery Watershed*
 ### Data Source
 
 [USGS National Hydrography Dataset (NHD) – Best Resolution](https://apps.nationalmap.gov/downloader/) 
+Hydrological Unit (HU) 8 - 05090203 (published 20231216) Shapefile
 
 * **Initial Data projection:** EPSG:4269 – NAD83 (Geographic Coordinate System) 
 * **Intended Final Map projection:** WGS84 (EPSG:4326) for web mapping in Mapbox  
@@ -33,7 +34,7 @@ The Middle Ohio–Laughery Watershed (HU8 05090203) contains a network of rivers
 
 ### Purpose
 
-The purpose of this map is to provide a **clear, interactive visualization of watershed hydrology**, highlighting flowlines and waterbodies while demonstrating effective GIS-to-web map workflow using QGIS and Mapbox Studio.
+The purpose of this map is to provide a clear, interactive visualization of watershed hydrology, highlighting flowlines and waterbodies, while demonstrating an effective GIS-to-web map workflow using QGIS and Mapbox Studio. As an employee of the Kentucky Division of Water, I am primarily responsible for Boone County, KY, and the Middle Ohio–Laughery Watershed is a major watershed affecting this area. This map provides an accessible way for the public to understand the region’s hydrology, as well as a tool for me to visualize flow routes and better perform my professional responsibilities.
 
 ---
 
